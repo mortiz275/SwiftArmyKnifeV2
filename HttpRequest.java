@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 
 public class HttpRequest {
-    private String requestURL;
+    protected String requestURL;
     protected ArrayList<String> urlContent;
     
     HttpRequest() {
