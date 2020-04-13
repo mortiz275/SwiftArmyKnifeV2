@@ -12,9 +12,11 @@ public class Help{
         System.out.println("-Sleep: Sleeps the process for 1 second. Shows time elapsed in milliseconds.");
         System.out.println("-SleepFast: Same functionality as Sleep but implements Threads to show differences in Elapsed Time.");
         System.out.println("-SleepFastImplementsRunnable: Same functionality as SleepFast but implements Runnable instead.");
+        System.out.println("-JsonValidateIndex [URL]: Checks an index and validates JSONs found in it. Insert URL inside [] and remove them.");
     }
     public static void printHttpRequestIndexHelp(){
         System.out.println("To use the HttpRequestIndex command, it must contain a valid URL.");
         System.out.println("Example: java sak -HttpRequestIndex https://thunderbird-index.azurewebsites.net/w0a6zk195d.json");
     }
 }
+

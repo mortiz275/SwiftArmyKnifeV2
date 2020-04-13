@@ -64,6 +64,7 @@ public class sak{
             SleepFastImplementsRunnable sleepFIR= new SleepFastImplementsRunnable();
             sleepFIR.sleepFIRFunction();
         }else if(args[0].equalsIgnoreCase("-JsonValidateIndex")){
+            long start= System.currentTimeMillis();
             System.out.println("Executing JsonValidator...");
             if(args.length!=2){
                 System.out.println("Invalid command Syntax");
@@ -75,6 +76,7 @@ public class sak{
                     jsonVI.parseIndex();
                 }
             }
+            System.out.println("Elapsed Time: "+(System.currentTimeMillis()-start)+" ms");
         }
     }
 }
