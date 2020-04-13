@@ -63,17 +63,16 @@ public class sak{
             System.out.println("Executing SleepFastImplementsRunnable...");
             SleepFastImplementsRunnable sleepFIR= new SleepFastImplementsRunnable();
             sleepFIR.sleepFIRFunction();
-        }else if(args[0].equalsIgnoreCase("-JsonValidator")){
+        }else if(args[0].equalsIgnoreCase("-JsonValidateIndex")){
             System.out.println("Executing JsonValidator...");
             if(args.length!=2){
                 System.out.println("Invalid command Syntax");
             }else{
                 String indexURL= args[1];
-                JsonValidator jsonValidator= new JsonValidator();
-                if(jsonValidator.readURL(indexURL)){
-                    System.out.println(jsonValidator);
-                    jsonValidator.parse();
-                    jsonValidator.validate();
+                JSONValidateIndex jsonVI= new JSONValidateIndex();
+                if(jsonVI.readURL(indexURL)){
+                    System.out.println(jsonVI);
+                    jsonVI.parseIndex();
                 }
             }
         }
